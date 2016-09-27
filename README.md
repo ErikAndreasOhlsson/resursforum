@@ -1,2 +1,2 @@
-# resursforum
+# Resursforum
 SuW/LiA-Project
