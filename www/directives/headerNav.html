@@ -1,0 +1,52 @@
+<nav id="head-navbar-rf" class="hvr-hang navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- use ng-init + ng-click to make nav collapsible -->
+      <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--<a id="rf-logo" class="navbar-brand" ng-href="/"><img src="/images/resursforum_logo.png" alt="Resursforum"></a>-->
+    </div>
+
+    <!-- ng-class assigns the collapsed "in" class whenever appropriate -->
+    <div class="collapse navbar-collapse" ng-class="navCollapsed ? '' : 'in'">
+      <ul id="navbar-left-rf" class="nav navbar-nav">
+        <!-- no links yet... -->
+        <li>
+          <a ng-click="$event.stopPropagation();" ng-href="/exempel">Exempel</a>
+          <!-- FIND SOLUTION/REMOVE ng-click="$event.stopPropagation();" -->
+        </li>
+      </ul>
+
+      <ul id="navbar-middle-rf" class="nav navbar-nav">
+        <li>
+          <select ng-click="$event.stopPropagation();" name="" id="">
+            <!-- FIND SOLUTION/REMOVE ng-click="$event.stopPropagation();" -->
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </li>
+      </ul>
+
+      <ul id="navbar-right-rf" class="nav navbar-right">
+        <li>
+          <a ng-click="$event.stopPropagation();" ng-href="/kontakt">Kontakt</a>
+          <!-- FIND SOLUTION/REMOVE ng-click="$event.stopPropagation();" -->
+          <!--<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>-->
+        </li>
+        <li>
+          <a href=""><img src="/images/nyhetsbrev_from_resursforum_arw_2.png" alt="Nyhetsbrev"></a>
+        </li>
+      </ul>
+      <!--<p class="navbar-text navbar-right">Time is: {{currentTime | date : 'mediumTime'}}</p>-->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+  <i id="pull-down" class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+</nav>

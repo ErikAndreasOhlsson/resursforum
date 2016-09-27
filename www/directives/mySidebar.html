@@ -1,0 +1,11 @@
+<uib-accordion
+close-others="oneAtATime"
+>
+  <!-- create an accordion group for each question -->
+  <uib-accordion-group
+  ng-repeat="question in faqs"
+  heading="{{question.title}}"
+  >
+    {{question.content}}
+  </uib-accordion-group>
+</uib-accordion>
