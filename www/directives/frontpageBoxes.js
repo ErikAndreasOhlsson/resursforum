@@ -23,12 +23,3 @@ app.directive('frontpageBoxes', [function(){
     }]
   };
 }]);
-
-
-
-
-
-
-
-
-
