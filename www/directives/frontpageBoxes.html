@@ -3,10 +3,11 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-{{colSize}}" ng-repeat="well in wells">
-      <div class="well">
+      <div id="pocket-well" class="well">
         <h3>{{well.title}}</h3>
         <p>{{well.content}}</p>
       </div>
+      <div id="pocket"></div>
     </div>
   </div>
 </div>
