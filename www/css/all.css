@@ -7307,6 +7307,10 @@ h1 {
   margin: 50px;
   text-align: center;
 }
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
 .nav,
 .pagination,
 .carousel,
@@ -7318,6 +7322,7 @@ h1 {
 }
 my-carousel img {
   margin: auto;
+  box-shadow: 0px 20px 38px #888888;
 }
 /* Hang */
 @-webkit-keyframes hvr-hang {
@@ -7524,6 +7529,8 @@ my-carousel img {
 }
 #navbar-right-rf {
   text-align: center;
+  text-decoration: none;
+  list-style: none;
 }
 #pull-down {
   display: inline-block;
