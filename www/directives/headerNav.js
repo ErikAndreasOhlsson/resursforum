@@ -18,20 +18,19 @@ app.directive('headerNav', [function () {
         e.preventDefault();
         $("#head-navbar-rf").toggleClass("drop");
         $("#head-navbar-rf").toggleClass("hvr-hang");
-        
-        //------------------------------------------------------
-        // FIXES FOR >>>ng-class="navCollapsed ? '' : 'in'"<<<
-        //-----------------------------------------------------
-        // if (navCollapsed = true) {
-          // $("#head-navbar-rf").removeClass("hvr-hang");
-          // $("#head-navbar-rf").className += " active";
-          // $("#head-navbar-rf").toggleClass("active");
-          // $("#head-navbar-rf").removeId("#");
-        // }
-
-        //------------------------------------------------------
-
       });
+
+      //------------------------------------------------------
+      // FIXES FOR >>>ng-class="navCollapsed ? '' : 'in'"<<<
+      //-----------------------------------------------------
+      // if (navCollapsed = true) {
+      // $("#head-navbar-rf").removeClass("hvr-hang");
+      // $("#head-navbar-rf").className += " active";
+      // $("#head-navbar-rf").toggleClass("active");
+      // $("#head-navbar-rf").removeId("#");
+      // }
+
+      //------------------------------------------------------
 
     }]
   };

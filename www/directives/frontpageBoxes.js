@@ -1,12 +1,14 @@
-app.directive('frontpageBoxes', [function(){
+app.directive('frontpageBoxes', [function () {
 
   return {
     templateUrl: '/directives/frontpageBoxes.html',
-    controller: ['$scope', function($scope) {
+    controller: ['$scope', function ($scope) {
+
       $scope.wells = [
         {
           title: 'Well 1',
-          content: 'Aliquam finibus purus vitae ipsum aliquam, vitae blandit lectus aliquet. Phasellus dignissim porta placerat. Nulla facilisi.'
+          content: 'Aliquam finibus purus vitae ipsum aliquam, vitae blandit lectus aliquet. Phasellus dignissim porta placerat. Nulla facilisi.',
+          pic: 'images/box1.png'
         },
         {
           title: 'Well 2',
@@ -19,7 +21,15 @@ app.directive('frontpageBoxes', [function(){
       ];
 
       // make all wells fit on a single row
-      $scope.colSize = Math.floor(24/$scope.wells.length);
+      $scope.colSize = Math.floor(24 / $scope.wells.length);
+
+      // $(".pocket-well").click(function (e) {
+      //   e.preventDefault();
+      //   $("#well-pocket").toggleClass("hide");
+      //   $(".pocket-well").toggleClass("up");
+      //   $(".pocket-well").toggleClass("hvr-bob");
+      // });
+
     }]
   };
 }]);
