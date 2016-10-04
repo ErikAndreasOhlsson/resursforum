@@ -1,0 +1,164 @@
+/* Verksamheter style */
+/*body {
+    background: url("https://thumbs.dreamstime.com/x/small-rocks-gravel-around-tree-35566646.jpg");
+}*/
+
+.block {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.block img{
+	width:100%;
+    border-radius: 15px;
+}
+.block .boxs {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 15px;
+    bottom: -68%;
+    right: 0;
+    background: url(../images/verksamhet/blue.jpg);
+    text-align: center;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.block:hover .boxs {
+  bottom: 0%;
+}
+.boxs h4 {
+    font-size: 2.2em;
+    color: #fff;
+    padding: 0.3em 0 0.2em;
+    font-family: Century;
+}
+.boxs p {
+    font-size:2em;
+    color: white;
+}
+.boxs a {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Candara;
+    color: white;
+}
+.boxs a:hover {
+    color: white;
+}
+.menu-bottom {
+    margin-top: 2em;
+}
+.boxs:before {
+     content: '';
+    position: absolute;
+    top: -11%;
+    left: 41%;
+    margin-left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 32px solid #001f3f;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+}
+
+/*-- For Mobile Device --*/
+@media(max-width:1080px){
+.boxs h4 {
+    font-size: 1em;
+    padding: 0.3em 0 0em;
+}
+.block:hover .boxs h4 {
+    margin-top: 95px;
+}
+}
+@media(max-width:991px){
+.boxs h4 {
+    font-size: 1.5em;
+}
+.block .boxs {
+    bottom: -85%;
+}
+}
+@media(max-width:600px){
+.menu-bottom1 {
+    width: 85%;
+    float: none;
+    padding: 0 0px 1em;
+    margin: 0 auto;
+}
+.boxs:before {
+    top: -15%;
+    left: 42%;
+}
+.block .boxs {
+    bottom: -80%;
+}
+.block:hover .boxs h4 {
+    margin-top: 23px;
+}
+}
+@media(max-width:414px){
+.menu {
+    padding: 2em 0 1em;
+}
+.menu-bottom1 {
+    width: 100%;
+}
+.block .boxs {
+    bottom: -84%;
+}
+}
+
+/* Info boxes Style */
+.white {
+    color: white;
+}
+.btn-lg {
+    font-size: 50px;
+    line-height: 1.33;
+    border-radius: 8px;
+}
+.info-box > .icon {
+    text-align: center;
+    position: relative;
+}
+.info-box > .icon > .image {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    border: 7px solid white;
+    line-height: 88px;
+    border-radius: 50%;
+    background: #001f3f;
+    vertical-align: middle;
+}
+.info-box > .icon > .info {
+    margin-top: -26px;
+    background: url(../images/verksamhet/blue2.jpg);
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 15px 0 10px 0;
+}
+.info-box > .icon > .info > h2.title {
+    color: white;
+    font-family: "Papyrus";
+    font-weight: 900;
+}
+.info-box > .icon > .info > p {
+    color: white;
+    font-weight: bold;
+    line-height: 1.8em;
+    margin: 40px;
+    font-size: 19px;
+    font-family: "Fantasy";
+}
+.info-box > .icon > .info > p a {
+    color: white;
+}

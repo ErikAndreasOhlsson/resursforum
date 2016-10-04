@@ -13,6 +13,9 @@ app.config(["$locationProvider", "$routeProvider", function ($locationProvider, 
     .when("/", {
       templateUrl: "/templates/hem.html"
     })
+    .when("/verksamhet", {
+      templateUrl: "/templates/verksamhet.html"
+    })
     .when("/kontakt", {
       templateUrl: "/templates/kontakt.html"
     })

@@ -1,17 +1,19 @@
 <!-- new .container > .row to have columns within columns -->
 <!-- must use container-fluid as we are inside a .container already -->
-<div class="container-fluid">
+<!--<div class="container-fluid">-->
   <div class="row">
     <div class="col-xs-{{colSize}}" ng-repeat="well in wells">
-      <!-- <div class="#" ng-repeat="well in wells"> -->
-      <div id="#" class="well pocket-well hvr-bob">
-        <!-- MAKE UNIQUE ID's!! -->
-        <!--<img src="{{well.pic}}" alt="">-->
-        <h3>{{well.title}}</h3>
-        <p>{{well.content}}</p>
+      <!--<div id="#" class="well pocket-well hvr-bob">-->
+        <div class="view view-sixth hvr-bob">
+          <!-- MAKE UNIQUE ID's!! -->
+          <h3>{{well.title}}</h3>
+          <div class="mask">
+            <!--<img src="{{well.pic}}" alt="">-->
+            <a href="{{well.url}}"><h2>{{well.title}}</h2></a>
+            <p>{{well.content}}</p>
+          </div>
+        </div>
       </div>
-      <!--<div id="well-pocket"></div>-->
+      <div id="pocket"></div>
     </div>
-    <div id="pocket"></div>
-  </div>
-</div>
+  <!--</div>-->

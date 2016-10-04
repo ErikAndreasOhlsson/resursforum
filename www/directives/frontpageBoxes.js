@@ -6,17 +6,22 @@ app.directive('frontpageBoxes', [function () {
 
       $scope.wells = [
         {
-          title: 'Well 1',
+          title: 'Om oss',
           content: 'Aliquam finibus purus vitae ipsum aliquam, vitae blandit lectus aliquet. Phasellus dignissim porta placerat. Nulla facilisi.',
-          pic: 'images/box1.png'
+          pic: 'images/temp/box1.png',
+          url: '/'
         },
         {
-          title: 'Well 2',
-          content: 'Morbi nibh dui, porttitor vel sagittis vel, porttitor nec dolor. Duis cursus porttitor neque, sagittis scelerisque est commodo quis.'
+          title: 'Verksamheter',
+          content: 'Morbi nibh dui, porttitor vel sagittis vel, porttitor nec dolor. Duis cursus porttitor neque, sagittis scelerisque est commodo quis.',
+          pic: 'images/temp/box1.png',
+          url: '/verksamhet'
         },
         {
-          title: 'Well 3',
-          content: 'Pellentesque a bibendum nisi. In dignissim est tortor, vitae iaculis nunc gravida et. Mauris venenatis libero eget risus sollicitudin euismod ut sed mi.'
+          title: 'Kontakt',
+          content: 'Pellentesque a bibendum nisi. In dignissim est tortor, vitae iaculis nunc gravida et. Mauris venenatis libero eget risus sollicitudin euismod ut sed mi.',
+          pic: 'images/temp/box1.png',
+          url: '/kontakt'
         }
       ];
 
