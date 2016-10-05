@@ -11,22 +11,29 @@ app.directive('myCarousel', [function () {
       var slides = $scope.slides = [];
       var currIndex = 0;
 
-      $scope.addSlide = function() {
-      var newWidth = 600 + slides.length + 1;
-      slides.push({
-      // image: 'images/box1.png' + newWidth + '/300',
-      // image: 'url(/images/box1.png' + (currIndex+1) + '/bild' + (currIndex+1) + '-1.png)',
-      image: 'http://lorempixel.com/' + newWidth + '/300',
-      text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
-      id: currIndex++
-      });
+      $scope.addSlide = function () {
+        var newWidth = 600 + slides.length + 1;
+        slides.push({
+          image: 'images/nyheter/nyhet ' + (currIndex + 1) + '.jpg',
+          text: ['I början av juni kommer vår verksamhetschef Titte Hallin att gå vidare mot nya utmaningar. Hon kommer att inleda med tjänstledighet i sex månader och under tiden vikarierar Nina Smith som ansvarig för familjeinsatserna. Vi tackar Titte för alla år och hos oss och önskar henne lycka till!', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 4],
+          id: currIndex++
+        });
       };
+
+      // $scope.addSlide = function () {
+      //   var newWidth = 600 + slides.length + 1;
+      //   slides.push({
+      //     image: 'http://lorempixel.com/' + newWidth + '/300',
+      //     text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 4],
+      //     id: currIndex++
+      //   });
+      // };
 
       // $scope.addSlide = function () {
 
       //   slides.push({
       //     imageStyle: {
-      //       'background-image': 'url(/images/flowers-ok' + (currIndex + 1) + '/flowers-ok' + (currIndex + 1) + '-1.png)'
+      //       'background-image': 'url(/images/nyheter/nyhet' + (currIndex + 1) + '-1.jpg)'
       //     },
       //     text: [/*'Nice image','Awesome photograph','That is so cool','I love that'*/][slides.length % 4],
       //     id: currIndex

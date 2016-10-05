@@ -7,26 +7,27 @@ app.directive('frontpageBoxes', [function () {
       $scope.wells = [
         {
           title: 'Om oss',
-          content: 'Aliquam finibus purus vitae ipsum aliquam, vitae blandit lectus aliquet. Phasellus dignissim porta placerat. Nulla facilisi.',
-          pic: 'images/temp/box1.png',
-          url: '/'
+          content: 'Företaget grundades i Lund 2006 av Christian Malm. Idag har vi kontor i Malmö och i Kristianstad och arbetar i hela södra Sverige...',
+          // pic: 'images/temp/box1.png',
+          url: '/om-oss'
         },
         {
           title: 'Verksamheter',
-          content: 'Morbi nibh dui, porttitor vel sagittis vel, porttitor nec dolor. Duis cursus porttitor neque, sagittis scelerisque est commodo quis.',
-          pic: 'images/temp/box1.png',
+          content: 'Familjeinsatser, Marte Meo, Handledning och mentorskap, Personalförstärkning, Utredningar, Parsamtal, Familjehemsutredningar ',
+          // pic: 'images/temp/box1.png',
           url: '/verksamhet'
         },
         {
           title: 'Kontakt',
-          content: 'Pellentesque a bibendum nisi. In dignissim est tortor, vitae iaculis nunc gravida et. Mauris venenatis libero eget risus sollicitudin euismod ut sed mi.',
-          pic: 'images/temp/box1.png',
+          content: 'Vi har korta väntetider och finns centralt i Malmö. Välkommen att kontakta oss!',
+          // pic: 'images/temp/box1.png',
           url: '/kontakt'
         }
       ];
 
       // make all wells fit on a single row
       $scope.colSize = Math.floor(24 / $scope.wells.length);
+
 
       // $(".pocket-well").click(function (e) {
       //   e.preventDefault();

@@ -19,8 +19,8 @@ app.config(["$locationProvider", "$routeProvider", function ($locationProvider, 
     .when("/kontakt", {
       templateUrl: "/templates/kontakt.html"
     })
-    .when("/exempel", {
-      templateUrl: "/templates/exempel.html"
+    .when("/om-oss", {
+      templateUrl: "/templates/om-oss.html"
     })
     .otherwise({
       templateUrl: "/templates/404.html"
